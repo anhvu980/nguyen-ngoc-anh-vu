@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#crypto-swap-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dropdown-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dropdown-selected:hover {
+  border-color: #4caf50;
+}
+
+.dropdown-selected img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.dropdown-options.show {
+  display: block;
+}
+
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-option img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #888;
+}

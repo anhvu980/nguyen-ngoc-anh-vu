@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto Swap</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <form id="crypto-swap-form">
+      <h2>Swap Cryptocurrency</h2>
+    
+      <div class="dropdown" id="from-token-dropdown">
+        <div class="dropdown-selected" data-value="eth">
+          <img src="https://raw.githubusercontent.com/Switcheo/token-icons/main/tokens/eth.png" alt="ETH" />
+          <span>ETH</span>
+        </div>
+        <div class="dropdown-options"></div>
+      </div>
+    
+      <div class="dropdown" id="to-token-dropdown">
+        <div class="dropdown-selected" data-value="btc">
+          <img src="https://raw.githubusercontent.com/Switcheo/token-icons/main/tokens/btc.png" alt="BTC" />
+          <span>BTC</span>
+        </div>
+        <div class="dropdown-options"></div>
+      </div>
+    
+      <label for="input-amount">Amount to send</label>
+      <input id="input-amount" type="number" step="any" placeholder="Enter amount to send" />
+    
+      <label for="output-amount">Amount to receive</label>
+      <input id="output-amount" type="number" step="any" disabled placeholder="Amount to receive" />
+    
+      <button type="button" id="confirm-swap">CONFIRM SWAP</button>
+    
+      <div class="footer">
+        <p>&copy; 2025 Cryptocurrency Swap</p>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
